@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberAlex Software Repository</title>
+</head>
+<body>
+
+<h1>CyberAlex Software Repository</h1>
+
+<p>
+    A small collection of Linux tools created by Alex.  
+    All packages are provided as simple <code>.deb</code> installers for Linux Mint and Ubuntu systems.
+</p>
+
+<hr>
+
+<!-- ========================= -->
+<!-- PROGRAM 1: SYSTEM MONITOR -->
+<!-- ========================= -->
+
+<h2>CyberAlex Linux System Monitor - Public Beta</h2>
+    <p>Created and Published by Alex (cyberalex.uk) on 1st Dec 2025</p> 
+
+<p>
+CyberAlex System Monitor is a modern, dark themed dashboard for Linux that displays CPU, GPU,
+memory, storage, temperatures, network status, firewall state, Bluetooth devices, Timeshift snapshots,
+system updates, and more all in one place. Designed for clarity and practicality, it highlights
+important changes, warns about open ports, and provides one click access to useful tools.
+</p>
+
+    <h3>Screenshot</h3>
+    <img src="sys.png" 
+     alt="CyberAlex System Monitor Screenshot"
+     style="max-width: 50%; height: auto; border: 1px solid #444;">
+
+
+<p>
+    <strong><a href="cyberalex-system-monitor.deb">Download (.deb)</a></strong>
+</p>
+
+
+<h3>Conditions of Use</h3>
+<p>
+  This software is provided free of charge and on an “as is” basis.  
+  No warranty is expressed or implied, and the author accepts no liability for any 
+  damage, data loss, system issues, or other consequences resulting from installing 
+  or using this package.  
+  Use is entirely at your own risk.  
+  By downloading or installing this software, you agree to these terms.
+</p>
+
+
+<h3>Requirements</h3>
+<ul>
+    <li>Linux Mint / Ubuntu</li>
+    <li>Min 1920x1080 resolution screen</li>
+    <li>Python 3</li>
+    <li>psutil</li>
+    <li>PySide6</li>
+    <li>curl</li>
+    <li>xdotool</li>
+    <li>ufw (optional)</li>
+    <li>Timeshift (optional)</li>
+</ul>
+
+<h3>Install Instructions</h3>
+
+<pre>
+#Terminal
+Open Terminal and run each line seperatly. if checksum fails - abort install. 
+
+# Download the package
+wget https://repository.cyberalex.uk/cyberalex-system-monitor.deb
+
+# Verify the SHA256 checksum
+echo "bbfd882bf9284253a6349a2088327f01b02ab81e1029b609ba605f784cd31734  cyberalex-system-monitor.deb" | sha256sum -c -
+
+# Install
+sudo dpkg -i cyberalex-system-monitor.deb
+
+# Fix any missing dependencies
+sudo apt -f install
+</pre>
+
+
+<hr>
+
+<!-- ========================= -->
+<!-- TEMPLATE FOR FUTURE PROGRAMS -->
+<!-- =========================
+
+<h2>Program Name (Coming Soon)</h2>
+<p>Short description of what the program does.</p>
+
+<p><em>Package not yet released.</em></p>
+
+Duplicate this block for more tools:
+<h2>Another Tool Name</h2>
+<p>Description here.</p>
+<p><strong><a href="filename.deb">Download (.deb)</a></strong></p>
+<h3>Requirements</h3>
+<ul>
+    <li>Requirement 1</li>
+    <li>Requirement 2</li>
+</ul>
+<h3>Install Instructions</h3>
+<pre>
+wget https://repository.cyberalex.uk/filename.deb
+sudo dpkg -i filename.deb
+sudo apt -f install
+</pre>
+<hr>
+-->
+
+<hr>
+
+<p>&copy; 2025 CyberAlex Repository.</p>
+
+</body>
+</html>
